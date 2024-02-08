@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e0f8ff965231c45905846811ba4562, type: 3}
+  m_Name: Tank
+  m_EditorClassIdentifier: 
+  Tears: {fileID: 11400000, guid: 57be392bf3e86f54c9faa60c269dd043, type: 2}
+  Character: {fileID: 1954582109, guid: b866bf1bad0123c458800f7a0f93d13b, type: 3}
+  life: 20
+  attack: 5
+  speed: 20

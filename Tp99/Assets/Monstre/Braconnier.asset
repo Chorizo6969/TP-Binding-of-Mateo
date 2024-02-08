@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef12625f1d9aeed4b9af64e897579787, type: 3}
+  m_Name: Braconnier
+  m_EditorClassIdentifier: 
+  Monster_Character: {fileID: 79400275, guid: 47714078b92ca2d4b98cca91e7fb73c5, type: 3}
+  Monster_pv: 20
+  prefab_Monstre: {fileID: 7857443718081133494, guid: bee54dd37abe7b3478b0f052df1996a3, type: 3}
+  Monster_Speed: 5
