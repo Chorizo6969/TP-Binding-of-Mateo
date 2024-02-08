@@ -379,32 +379,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 484993376}
-  - component: {fileID: 484993375}
   m_Layer: 0
   m_Name: Monster Manager
-  m_TagString: Untagged
+  m_TagString: Ennemie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &484993375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484993374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 082f9d0c043114f4aa74734296124c8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monstre1: {fileID: 11400000, guid: 4183ec55a2bd0c343a3d934fc3b31665, type: 2}
-  monstre2: {fileID: 11400000, guid: 882c165121f8fcd40ad10c9bc21217d4, type: 2}
-  monstre: {fileID: 0}
-  spriteRenderer_Monstre: {fileID: 871458790}
-  speed: 0
-  life: 0
 --- !u!4 &484993376
 Transform:
   m_ObjectHideFlags: 0
@@ -541,14 +522,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663777522}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -642,7 +623,8 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: a36614c8af115334eb49026097b8fa54, type: 2}
   rb: {fileID: 663777523}
   speed: 30
-  projectile: {fileID: 11400000, guid: e4b627618f65d2a44b72c05e606debd5, type: 2}
+  projectile: {fileID: 11400000, guid: e510fddf28e454545861ec5f352d7cfe, type: 2}
+  life: 0
 --- !u!61 &663777527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -885,10 +867,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4748792121841803149, guid: bee54dd37abe7b3478b0f052df1996a3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7857443718081133494, guid: bee54dd37abe7b3478b0f052df1996a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1768410426}
   m_SourcePrefab: {fileID: 100100000, guid: bee54dd37abe7b3478b0f052df1996a3, type: 3}
 --- !u!212 &871458790 stripped
 SpriteRenderer:
@@ -1447,6 +1433,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1768410423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7857443718081133494, guid: bee54dd37abe7b3478b0f052df1996a3, type: 3}
+  m_PrefabInstance: {fileID: 871458789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1768410426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768410423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 082f9d0c043114f4aa74734296124c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 663777522}
+  monstre1: {fileID: 11400000, guid: 4183ec55a2bd0c343a3d934fc3b31665, type: 2}
+  monstre2: {fileID: 11400000, guid: 882c165121f8fcd40ad10c9bc21217d4, type: 2}
+  monstre: {fileID: 0}
+  spriteRenderer_Monstre: {fileID: 871458790}
+  vie: {fileID: 11400000, guid: a36614c8af115334eb49026097b8fa54, type: 2}
+  speed: 0
+  life: 0
 --- !u!1 &1777677730
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1049563158435635631, guid: fdc1ca3cb3f75814aa6949b4debb1ebc, type: 3}
       propertyPath: m_Name
-      value: Tears (1) Variant
+      value: Medium Tears
       objectReference: {fileID: 0}
     - target: {fileID: 1600415234977873878, guid: fdc1ca3cb3f75814aa6949b4debb1ebc, type: 3}
       propertyPath: m_LocalScale.x
@@ -71,5 +71,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1049563158435635631, guid: fdc1ca3cb3f75814aa6949b4debb1ebc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5320437444539319196}
   m_SourcePrefab: {fileID: 100100000, guid: fdc1ca3cb3f75814aa6949b4debb1ebc, type: 3}
+--- !u!1 &3866700532490941323 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1049563158435635631, guid: fdc1ca3cb3f75814aa6949b4debb1ebc, type: 3}
+  m_PrefabInstance: {fileID: 4267595522841973284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &5320437444539319196
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3866700532490941323}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

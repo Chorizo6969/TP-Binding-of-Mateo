@@ -16,4 +16,4 @@ MonoBehaviour:
   Character: {fileID: 684013239, guid: b866bf1bad0123c458800f7a0f93d13b, type: 3}
   life: 3
   attack: 20
-  speed: 40
+  speed: 50

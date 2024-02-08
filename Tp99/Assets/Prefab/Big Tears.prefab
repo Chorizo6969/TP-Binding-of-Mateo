@@ -8,9 +8,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -302638363328778146, guid: fdc1ca3cb3f75814aa6949b4debb1ebc, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1049563158435635631, guid: fdc1ca3cb3f75814aa6949b4debb1ebc, type: 3}
       propertyPath: m_Name
-      value: Tears (2) Variant
+      value: Big Tears
       objectReference: {fileID: 0}
     - target: {fileID: 1600415234977873878, guid: fdc1ca3cb3f75814aa6949b4debb1ebc, type: 3}
       propertyPath: m_LocalScale.x
