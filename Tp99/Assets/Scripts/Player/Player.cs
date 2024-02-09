@@ -1,35 +1,45 @@
 using UnityEngine;
-
+using TMPro;
 public class Player : MonoBehaviour
 {
     public CharacterClass character;
     public Rigidbody2D rb;
     public float speed;
-    public Tears projectile;
     public int life;
+    public TextMeshProUGUI TMP;
+    public SpriteRenderer spriteRenderer;
 
     Vector3 moveAxis;
 
+    private void Start()
+    {
+        spriteRenderer.sprite = character.Character;
+        speed = character.speed;
+        life = character.life;
+        TMP.text = life.ToString();
+    }
     void Update()
     {
         moveAxis = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            TIRE();
-        }
-    }
 
+    }
     private void FixedUpdate()
     {
-        speed = character.speed;
-        life = character.life;
         rb.velocity = moveAxis * speed * Time.fixedDeltaTime;
     }
-
-    public void TIRE()
+    public void OnCollisionEnter2D(Collision2D monstre)
     {
-        Instantiate(projectile.larme);
-        Rigidbody2D rbBullet = projectile.larme.GetComponent<Rigidbody2D>();
-        rbBullet.AddForce(projectile.larme.transform.right * projectile.speedTears);
+        if (monstre.collider.tag == "Monstre")
+        {
+            if (life > 1)
+            {
+                life = life - 1 ;
+                TMP.text = life.ToString();
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

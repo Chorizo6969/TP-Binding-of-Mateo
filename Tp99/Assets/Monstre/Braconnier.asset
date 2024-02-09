@@ -15,4 +15,4 @@ MonoBehaviour:
   Monster_Character: {fileID: 79400275, guid: 47714078b92ca2d4b98cca91e7fb73c5, type: 3}
   Monster_pv: 20
   prefab_Monstre: {fileID: 7857443718081133494, guid: bee54dd37abe7b3478b0f052df1996a3, type: 3}
-  Monster_Speed: 5
+  Monster_Speed: 3

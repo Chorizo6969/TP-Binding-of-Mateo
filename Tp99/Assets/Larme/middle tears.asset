@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76cf230de779b224aa30e02c18d3919f, type: 3}
-  m_Name: Medium Tears
+  m_Name: middle tears
   m_EditorClassIdentifier: 
-  larme: {fileID: 3866700532490941323, guid: 5323b627021284e41a9a7c92d5c85555, type: 3}
-  speedTears: 5
+  larme: {fileID: 1049563158435635631, guid: fdc1ca3cb3f75814aa6949b4debb1ebc, type: 3}
+  speedTears: 10
   Tearslife: 10

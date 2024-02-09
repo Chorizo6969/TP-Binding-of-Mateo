@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e0f8ff965231c45905846811ba4562, type: 3}
   m_Name: Squelette
   m_EditorClassIdentifier: 
-  Tears: {fileID: 11400000, guid: e510fddf28e454545861ec5f352d7cfe, type: 2}
+  Tears: {fileID: 11400000, guid: e4b627618f65d2a44b72c05e606debd5, type: 2}
   Character: {fileID: 684013239, guid: b866bf1bad0123c458800f7a0f93d13b, type: 3}
   life: 3
   attack: 20

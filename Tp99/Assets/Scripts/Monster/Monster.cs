@@ -1,6 +1,4 @@
 using UnityEngine;
-
-
 [CreateAssetMenu(fileName = "New Monstre", menuName = "Monstres")]
 public class Monster : ScriptableObject
 {

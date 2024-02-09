@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ennemie
+  - Monstre
+  - Larme
+  - Wall
   layers:
   - Default
   - TransparentFX
